@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>HTML</title>
 </head>
 <body>
-
+	<h2>统一建模语言理论测试</h3>
+	<table>
+		<tr>
+			<td>考试科目: </td>
+			<td>统一建模语言：</td>
+			<td>时间：</td>
+			<td>100分钟</td>
+			<td>得分:</td>
+			<td><label id="score">100</label></td>
+		</tr>
+		<tr>
+			<td>班级：</td>
+			<td><input type="text" id="Class" value="1班"></td>
+			<td>学号：</td>
+			<td><input type="text" id="StudentID" value="001"></td>
+			<td>姓名：</td>
+			<td><input type="text" id="Name" value="王小闹"></td>
+		</tr>
+	</table>
+	<h3>一、填空题(每空5分，共20分)</h3>
+	<table>
+			<tr>
+				<td>1.UML的中文全称是：</td>
+				<td><input type="text" value="统一建模语言"></td>
+			</tr>
+			<tr>
+				<td>2.对象最突出的特征是：</td>
+				<td><input type="text" value="封装性"></td>
+				<td><input type="text" value="继承性"></td>
+				<td><input type="text" value="多态性"></td>
+			</tr>
+		</table>
+		<h3>二、选择题(每空10分，共20分)</h3>
+		<table>
+			<tr><td><div style="margin-bottom:10px">1.UML与软件工程的关系是：</div></td></tr>
+			<tr><td><input type="radio" name ="q1">(A)UML就是软件工程</td></tr>
+			<tr><td><input type="radio" name ="q1" checked>(B)UML参与到软件工程中软件开发过程的几个阶段</td></tr>
+			<tr><td><input type="radio" name ="q1">(C)UML与软件工程无关</td></tr>
+			<tr><td><input type="radio" name ="q1">(D)UML是软件工程的一部分</td></tr>
+			<tr><td><div style="margin-top:10px; margin-bottom:10px">2.Java语言支持：</div></td></tr>
+			<tr><td><input type="radio" name ="q2" checked>(A)单继承</td></tr>
+			<tr><td><input type="radio" name ="q2">(B)多继承</td></tr>
+			<tr><td><input type="radio" name ="q2">(C)单继承和多继承都支持</td></tr>
+			<tr><td><input type="radio" name ="q2">(D)单继承和多继承都不支持</td></tr>
+		</table>
+		<h3>三、多选题(每空10分，共20分)</h3>
+		<table>
+				<tr><td><div style="margin-bottom:10px">1.用例的粒度分为以下哪三种：</div></td></tr>
+				<tr><td><input type="checkbox" id="mul1" checked/>(A)概述级</td></tr>
+				<tr><td><input type="checkbox" id="mul1" checked/>(B)需求级</td></tr>
+				<tr><td><input type="checkbox" id="mul1"/>(C)用户目标级</td></tr>
+				<tr><td><input type="checkbox" id="mul1" checked/>(D)子功能级</td></tr>
+				<tr><td><div style="margin-top:10px; margin-bottom:10px">2.类图由以下哪三部分组成：</div></td></tr>
+				<tr><td><input type="checkbox" id="mul2" checked/>(A)名称(Name)</td></tr>
+				<tr><td><input type="checkbox" id="mul2" checked/>(B)属性(Attribute)</td></tr>
+				<tr><td><input type="checkbox" id="mul2" checked/>(C)操作(Operation)</td></tr>
+				<tr><td><input type="checkbox" id="mul2"/>(D)方法(Function)</td></tr>
+		</table>
+		<h3>四、判断题(每空10分，共20分)</h3>
+		<label>1.用例图只是用于和客户交流和沟通的，用于确定需求。</label>
+		<input type="radio" name="JudgementQ1" value="right">√
+		<input type="radio" name="JudgementQ1" value="wrong" checked>×
+		</br>
+		<label>2.在状态图中，终止状态在一个状态图中允许有任意多个。</label>
+		<input type="radio" name="JudgementQ2" value="right" checked>√
+		<input type="radio" name="JudgementQ2" value="wrong">×	
+		<h3>五、简答题(每空20分，共20分)</h3>
+		<label>1.简述什么是模型以及模型的表现形式？</label></br>
+		<textarea id="shortAnswer" style="width:600px;height:100px">模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事务或概念的一种表达形式。可以使物理实体；可以使某种图形；或者是一种数学表达式。</textarea>
+		</br>
+		<input id="calculateScore" type="button" value="计算成绩" onclick="CalculateScore()" />
+		<script>
+			function CalculateScore(){
+				if (1) {
+					document.getElementById("score").innerText="100";
+				}
+			}
+		</script>
 </body>
 </html>
